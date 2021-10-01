@@ -53,38 +53,3 @@ void error_handle(char *str)
     print_msg(str, 2);
     exit(1);
 }
-
-void check_duplicate(t_list **lst)
-{
-    t_list  *tmp;
-    t_list  *curr;
-    int std_num;
-
-    tmp = *lst;
-    while (tmp)
-    {
-        std_num = tmp->num;
-        curr = tmp->next;
-        while (curr)
-        {
-            if (curr->num == std_num)
-                error_handle("Error:Duplicated Number");
-            curr = curr->next;
-        }
-        tmp = tmp->next;
-    }
-}
-
-void make_lst(int argc, char **argv, t_list **a_lst, t_list ** b_lst)
-{
-    int cnt;
-
-    cnt = 1;
-    *a_lst = ft_lstnew(ft_swap_atoi(argv[cnt++]), 1);
-    *b_lst = ft_lstnew(0, 0); // int 형에 null 을 넣을 수 없음. pointer 에 null 을 넣을 수 있을것임.
-    while (cnt < argc)
-    {
-        ft_lstadd_back(a_lst, ft_lstnew(ft_swap_atoi(argv[cnt++]), 1));
-        ft_lstadd_back(b_lst, ft_lstnew(0, 0));
-    }
-}
