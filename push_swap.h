@@ -28,6 +28,10 @@ void    add_first(t_lst *lst, int data);
 void    add_last(t_lst *lst, int data);
 void    del_first(t_lst *lst);
 void    del_last(t_lst *lst);
-void    lst_iter(t_lst *lst, void (*f)(int));
+void    iter_lst(t_lst *lst);
 
+void    swap_lst(t_lst *lst);
+void    push_lst(t_lst *srclst, t_lst *dstlst);
+void    rotate_lst(t_lst *lst);
+void    rrotate_lst(t_lst *lst);
 #endif

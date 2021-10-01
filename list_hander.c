@@ -1,4 +1,5 @@
 #include "push_swap.h"
+#include <stdio.h>
 
 t_lst   *init_lst(void)
 {
@@ -62,6 +63,7 @@ void    add_last(t_lst *lst, int data)
         lst->tail->next = tmp;
         lst->tail = tmp;
     }
+    lst->size++;
 }
 
 void    del_first(t_lst *lst)
@@ -111,17 +113,19 @@ void    del_last(t_lst *lst)
 
 }
 
-void    iter_lst(t_lst *lst, void (*f)(int))
+void    iter_lst(t_lst *lst)
 {
     t_node *curr;
     int len;
-
+    
     if (lst->head == NULL)
         return ;
     len = 0;
+    curr = lst->head;
     while (len < lst->size)
     {
-        f(curr->data);
+        print_num(curr->data);
         curr = curr->next;
+        len++;
     }
 }

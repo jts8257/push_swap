@@ -46,6 +46,7 @@ void	print_num(int num)
 	num %= 10;
 	tmp = num + '0';
 	write(1, &tmp, 1);
+	write(1, " ", 1);
 }
 
 void error_handle(char *str)
