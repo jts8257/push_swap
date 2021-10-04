@@ -21,7 +21,7 @@ int main(int argc, char **argv)
     iter_lst(a_lst);
     print_msg("", 1);
 
-    // TODO #1 퀵 정렬에 사용할 적절한 피봇 고르는 함수.
+    // TODO #1 퀵 정렬에 사용할 적절한 피봇 고르는 함수. -> median 을 찾아서 주려면 정렬을 해야함.
     // TODO #2 스택이 정렬되어 있는지 체크하는 함수.
     // TODO #3 a 스택에 pivot 기준으로 큰 값을 남겨두기. 작은 값은 b 스택에 쌓기
 
