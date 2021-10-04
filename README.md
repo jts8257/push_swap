@@ -1,5 +1,9 @@
 # push_swap
 
+
+<img width="770" alt="Screen Shot 2021-10-04 at 12 57 36 PM" src="https://user-images.githubusercontent.com/53824764/135814619-241d6c4e-cf4d-4d96-a449-bc338983ed67.png">
+
+
 [개괄](https://evan-moon.github.io/2018/10/13/sort-algorithm/)
 
 [버블정렬](https://gmlwjd9405.github.io/2018/05/06/algorithm-bubble-sort.html)
